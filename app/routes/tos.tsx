@@ -8,7 +8,7 @@ export default function Tos() {
         <div className="mt-4 flex flex-col ">
           <img
             className="w-1/2 self-center"
-            src="app/assets/xtralogo1.png"
+            src="/assets/xtralogo1.png"
             alt="Our logo"
           />
         </div>

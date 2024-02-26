@@ -7,7 +7,7 @@ export default function Services() {
       <section className="px-8 pb-8">
         <section className="m-auto flex max-w-6xl flex-col content-center items-center justify-center lg:flex-row">
           <img
-            src="app/assets/services-splash.jpg"
+            src="/assets/services-splash.jpg"
             alt="Dog lying on grass"
             className="lg:w-3/4"
           />
@@ -39,7 +39,7 @@ export default function Services() {
         <div className="items-center justify-center p-8 lg:grid lg:grid-cols-2">
           <div className="flex flex-col">
             <img
-              src="./app/assets/house.png"
+              src=".//assets/house.png"
               alt="a drawn house with a yard."
               className="mx-auto my-8 w-64 lg:order-2"
             />
@@ -105,7 +105,7 @@ export default function Services() {
           <div className="">
             <div className="mx-auto lg:size-64">
               <img
-                src="./app/assets/horse.png"
+                src=".//assets/horse.png"
                 alt="a drawn horse."
                 className="mx-auto my-8 w-64"
               />
@@ -130,7 +130,7 @@ export default function Services() {
           <div className="">
             <div className="mx-auto lg:size-64">
               <img
-                src="./app/assets/kennel.png"
+                src=".//assets/kennel.png"
                 alt="a drawn dog house."
                 className="mx-auto my-8 w-64"
               />
@@ -156,7 +156,7 @@ export default function Services() {
           <div className="">
             <div className="mx-auto lg:size-64">
               <img
-                src="./app/assets/dog-walk-1.png"
+                src=".//assets/dog-walk-1.png"
                 alt="a dog struggling against it's leash."
                 className="mx-auto my-8 w-64"
               />

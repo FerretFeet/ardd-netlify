@@ -9,7 +9,7 @@ export function Footer() {
           <div className="hidden w-2/5 gap-4 text-center md:flex md:flex-col">
             <p className="text-center text-2xl font-bold">Service Area</p>
             <img
-              src="app/assets/mapimage.jpg"
+              src="/assets/mapimage.jpg"
               alt="A map of our service area, including Cabot, Beebe, and Searcy."
             />
             {/* <iframe
@@ -24,7 +24,7 @@ export function Footer() {
             <div className="min-w-min max-w-64 bg-tert-1 p-3 md:mt-10 md:max-w-96 ">
               <img
                 className="-rotate-3 drop-shadow-2xl"
-                src="app/assets/footerpic.jpg"
+                src="/assets/footerpic.jpg"
                 alt="A dog"
               />
             </div>
