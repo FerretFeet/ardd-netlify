@@ -1,6 +1,5 @@
 import ContactForm from "../components/ContactForm";
 export default function ContactUs() {
-
   return (
     <section className="">
       <h1 className="my-8 text-center font-serif text-3xl font-extrabold lg:mt-8">

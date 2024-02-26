@@ -44,9 +44,8 @@ export default function Tos() {
         <h4 className="ml-8 text-xl font-bold">Cancellation</h4>
         <p className="">
           A client may cancel its Service at any time for any reasion without
-          penalty. To request cancellation, please call&nbsp;
-          1-501-237-1638 or email&nbsp;
-          Brandon.W@ardoodyduty.com. Any outstanding payment for
+          penalty. To request cancellation, please call&nbsp; 1-501-237-1638 or
+          email&nbsp; Brandon.W@ardoodyduty.com. Any outstanding payment for
           services rendered prior to cancellation shall be due and payable at
           the time the client&apos;s Service is terminated.
         </p>

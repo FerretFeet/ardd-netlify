@@ -21,7 +21,7 @@ module.exports = {
   },
 
   // Base config
-  extends: ["eslint:recommended"],
+  extends: ["eslint:recommended", "plugin:tailwindcss/recommended"],
 
   overrides: [
     // React
@@ -79,5 +79,14 @@ module.exports = {
         node: true,
       },
     },
+    
+    //Prettier
+    {
+      files: ["**/*.{js,jsx,ts,tsx}"],
+      extends: [
+    "plugin:prettier/recommended",
+
+      ]
+    }
   ],
 };
