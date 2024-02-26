@@ -103,6 +103,7 @@ export default function ContactForm() {
           <input
             className="border-2 p-2 shadow-sm"
             type="text"
+            name="name"
             id="name"
             placeholder="First and last name"
             required
@@ -116,6 +117,7 @@ export default function ContactForm() {
             className="border-2 p-2 shadow-sm"
             type="text"
             id="phone"
+            name="phone"
             placeholder="555-555-5555"
             required
             value={state.phone}
@@ -130,6 +132,7 @@ export default function ContactForm() {
             className="border-2 p-2 shadow-sm"
             type="email"
             id="email"
+            name="email"
             placeholder="johndoe123@example.com"
             required
             value={state.email}
@@ -144,6 +147,7 @@ export default function ContactForm() {
             className="border-2 p-2 shadow-sm"
             type="subject"
             id="subject"
+            name="subject"
             placeholder="e.g. business services, questions"
             required
             value={state.subject}
