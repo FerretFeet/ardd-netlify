@@ -1,4 +1,5 @@
-import React, { ChangeEvent, useState } from "react";
+import { ChangeEvent, useState } from "react";
+// import React;
 
 interface FormState {
   name: string;
@@ -58,21 +59,21 @@ export default function ContactForm() {
     }));
   }
 
-  function handleSubmit(event: React.SyntheticEvent<HTMLFormElement>) {
-    event.preventDefault();
-    console.log(state);
-    resetForm();
-  }
+  // function handleSubmit(event: React.SyntheticEvent<HTMLFormElement>) {
+  //   event.preventDefault();
+  //   console.log(state);
+  //   resetForm();
+  // }
 
-  function resetForm() {
-    setState({
-      name: "",
-      phone: "",
-      email: "",
-      subject: "",
-      message: "",
-    });
-  }
+  // function resetForm() {
+  //   setState({
+  //     name: "",
+  //     phone: "",
+  //     email: "",
+  //     subject: "",
+  //     message: "",
+  //   });
+  // }
 
   return (
     // NODEMAILER TO SEND EMAIL
@@ -91,7 +92,7 @@ export default function ContactForm() {
       </p>
 
       <form
-        onSubmit={handleSubmit}
+        // onSubmit={handleSubmit}
         method="POST"
         className="m-8 flex flex-col items-center justify-center gap-6 text-left text-xl children:flex children:w-3/4 children:flex-col children:gap-2"
         data-netlify="true"
