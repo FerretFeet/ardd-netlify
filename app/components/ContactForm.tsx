@@ -93,6 +93,7 @@ export default function ContactForm() {
 
       <form
         // onSubmit={handleSubmit}
+        name="contactForm"
         method="POST"
         className="m-8 flex flex-col items-center justify-center gap-6 text-left text-xl children:flex children:w-3/4 children:flex-col children:gap-2"
         data-netlify="true"
