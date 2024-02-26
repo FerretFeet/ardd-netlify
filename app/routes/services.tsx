@@ -59,10 +59,7 @@ export default function Services() {
                 Starting at $60, and including 5.0 gallons of waste removal, if
                 more is required, we charged $40 for each additional 5.0 gallon
                 bucket used.{" "}
-                <a
-                  className="underline hover:italic"
-                  href="/contact-us"
-                >
+                <a className="underline hover:italic" href="/contact-us">
                   Contact us for more information
                 </a>
               </p>
@@ -121,10 +118,7 @@ export default function Services() {
               with trash or poop? Have larger animals and tired of the manure
               everywhere? Contact Us and we&apos;ll see what we can do!
             </p>
-            <a
-              href="/contact-us"
-              className="lg:hidden"
-            >
+            <a href="/contact-us" className="lg:hidden">
               <button
                 type="button"
                 className="mx-auto mb-6 mt-4 flex content-center justify-center rounded-md bg-prim-1 p-2 text-xl font-semibold text-off-white hover:underline hover:opacity-90 lg:hidden"
@@ -150,10 +144,7 @@ export default function Services() {
               further, starting from $50 for smaller jobs. Contact Us and
               we&apos;ll see what we can do!
             </p>
-            <a
-              href="/contact-us"
-              className="lg:hidden"
-            >
+            <a href="/contact-us" className="lg:hidden">
               <button
                 type="button"
                 className="mx-auto mb-6 mt-4 flex content-center justify-center rounded-md bg-prim-1 p-2 text-xl font-semibold text-off-white hover:underline hover:opacity-90 lg:hidden"
@@ -194,10 +185,7 @@ export default function Services() {
         </a>
       </section>
 
-      <section
-        id="faq"
-        className="m-10"
-      >
+      <section id="faq" className="m-10">
         <h4 className="p-4 text-center text-3xl font-bold">
           Frequently Asked Questions
         </h4>
