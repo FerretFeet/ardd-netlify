@@ -11,7 +11,7 @@ function Index() {
         <div className="mt-4 flex flex-col ">
           <img
             className="w-1/2 self-center"
-            src="public/assets/xtralogo1.png"
+            src="app/assets/xtralogo1.png"
             alt="Our logo"
           />
           <h4 className="m-2 p-3 text-center text-xl font-bold underline">
@@ -43,13 +43,19 @@ function Index() {
       </section>
 
       {/* ######### NEXT SECTION ################ */}
-      <section id="intro" className="pb-6 text-center text-xl">
+      <section
+        id="intro"
+        className="pb-6 text-center text-xl"
+      >
         <h2 className="m-8 font-bold ">Don&apos;t Let Things Pile Up</h2>
-        <div className="flex flex-col lg:flex-row" id="intro-container">
+        <div
+          className="flex flex-col lg:flex-row"
+          id="intro-container"
+        >
           <div className="flex flex-col space-y-4 p-4 text-center text-lg">
             <img
               className="max-w-32 self-center"
-              src="public/assets/calendar.png"
+              src="app/assets/calendar.png"
               alt="A calendar."
             />
             <h4 className="text-xl font-bold hover:underline">
@@ -62,10 +68,13 @@ function Index() {
           <div className="flex flex-col space-y-4 p-4 text-center text-lg">
             <img
               className="max-w-32 self-center"
-              src="public/assets/dogwpoop.png"
+              src="app/assets/dogwpoop.png"
               alt="A dog with poop."
             />
-            <a className="text-xs" href="http://www.freepik.com">
+            <a
+              className="text-xs"
+              href="http://www.freepik.com"
+            >
               Designed by studiogstock / Freepik
             </a>
 
@@ -80,7 +89,7 @@ function Index() {
           <div className="flex flex-col space-y-4 p-4 text-center text-lg">
             <img
               className="max-w-32 self-center"
-              src="public/assets/yardvector.png"
+              src="app/assets/yardvector.png"
               alt="A clean yard."
             />
             <h4 className="text-xl font-bold hover:underline">
@@ -93,7 +102,10 @@ function Index() {
           </div>
         </div>
       </section>
-      <section id="whyUs" className="p-6">
+      <section
+        id="whyUs"
+        className="p-6"
+      >
         <h2 className="m-6 text-center text-2xl font-bold">Why Choose Us?</h2>
 
         {/* IMAGES BETWEEN AT MD:
@@ -101,7 +113,7 @@ function Index() {
         lg:flex-row */}
         <div className="grid justify-items-center space-x-8 p-8 lg:grid-cols-3">
           <img
-            src="./public/assets/dog1.png"
+            src="./app/assets/dog1.png"
             alt="a drawn dog with one ear perked."
             className="mx-auto my-8 w-64"
           />
@@ -138,12 +150,12 @@ function Index() {
             </p>
           </div>
           <img
-            src="./public/assets/dog2.png"
+            src="./app/assets/dog2.png"
             alt="a drawn dog running."
             className="order-5 m-auto w-64 lg:order-1"
           />
           <img
-            src="./public/assets/dog3.png"
+            src="./app/assets/dog3.png"
             alt="a drawn dog relieving himself."
             className="m-auto hidden w-64 lg:order-1 lg:block"
           />
@@ -163,7 +175,7 @@ function Index() {
 
           <img
             className="w-screen max-w-screen-sm border-4"
-            src="public/assets/MeandGirlscrop.jpg"
+            src="app/assets/MeandGirlscrop.jpg"
             alt="The owner with his two black and white dogs"
           />
         </div>

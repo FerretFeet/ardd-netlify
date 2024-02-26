@@ -7,7 +7,7 @@ export default function Services() {
       <section className="px-8 pb-8">
         <section className="m-auto flex max-w-6xl flex-col content-center items-center justify-center lg:flex-row">
           <img
-            src="public/assets/services-splash.jpg"
+            src="app/assets/services-splash.jpg"
             alt="Dog lying on grass"
             className="lg:w-3/4"
           />
@@ -39,7 +39,7 @@ export default function Services() {
         <div className="items-center justify-center p-8 lg:grid lg:grid-cols-2">
           <div className="flex flex-col">
             <img
-              src="./public/assets/house.png"
+              src="./app/assets/house.png"
               alt="a drawn house with a yard."
               className="mx-auto my-8 w-64 lg:order-2"
             />
@@ -59,7 +59,10 @@ export default function Services() {
                 Starting at $60, and including 5.0 gallons of waste removal, if
                 more is required, we charged $40 for each additional 5.0 gallon
                 bucket used.{" "}
-                <a className="underline hover:italic" href="/contact-us">
+                <a
+                  className="underline hover:italic"
+                  href="/contact-us"
+                >
                   Contact us for more information
                 </a>
               </p>
@@ -105,7 +108,7 @@ export default function Services() {
           <div className="">
             <div className="mx-auto lg:size-64">
               <img
-                src="./public/assets/horse.png"
+                src="./app/assets/horse.png"
                 alt="a drawn horse."
                 className="mx-auto my-8 w-64"
               />
@@ -118,7 +121,10 @@ export default function Services() {
               with trash or poop? Have larger animals and tired of the manure
               everywhere? Contact Us and we&apos;ll see what we can do!
             </p>
-            <a href="/contact-us" className="lg:hidden">
+            <a
+              href="/contact-us"
+              className="lg:hidden"
+            >
               <button
                 type="button"
                 className="mx-auto mb-6 mt-4 flex content-center justify-center rounded-md bg-prim-1 p-2 text-xl font-semibold text-off-white hover:underline hover:opacity-90 lg:hidden"
@@ -130,7 +136,7 @@ export default function Services() {
           <div className="">
             <div className="mx-auto lg:size-64">
               <img
-                src="./public/assets/kennel.png"
+                src="./app/assets/kennel.png"
                 alt="a drawn dog house."
                 className="mx-auto my-8 w-64"
               />
@@ -144,7 +150,10 @@ export default function Services() {
               further, starting from $50 for smaller jobs. Contact Us and
               we&apos;ll see what we can do!
             </p>
-            <a href="/contact-us" className="lg:hidden">
+            <a
+              href="/contact-us"
+              className="lg:hidden"
+            >
               <button
                 type="button"
                 className="mx-auto mb-6 mt-4 flex content-center justify-center rounded-md bg-prim-1 p-2 text-xl font-semibold text-off-white hover:underline hover:opacity-90 lg:hidden"
@@ -156,7 +165,7 @@ export default function Services() {
           <div className="">
             <div className="mx-auto lg:size-64">
               <img
-                src="./public/assets/dog-walk-1.png"
+                src="./app/assets/dog-walk-1.png"
                 alt="a dog struggling against it's leash."
                 className="mx-auto my-8 w-64"
               />
@@ -185,7 +194,10 @@ export default function Services() {
         </a>
       </section>
 
-      <section id="faq" className="m-10">
+      <section
+        id="faq"
+        className="m-10"
+      >
         <h4 className="p-4 text-center text-3xl font-bold">
           Frequently Asked Questions
         </h4>

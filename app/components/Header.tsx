@@ -11,7 +11,7 @@ export function Header() {
         <a href=".">
           <img
             className="max-w-12 xs:max-w-20"
-            src="public/assets/logo.png"
+            src="app/assets/logo.png"
             alt="Our logo"
             srcSet=""
           />
