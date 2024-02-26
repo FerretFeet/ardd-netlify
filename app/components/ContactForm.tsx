@@ -78,10 +78,7 @@ export default function ContactForm() {
     // NODEMAILER TO SEND EMAIL
     // HOW TO INTEGRATE FRONT AND BACKEND
     //Honeypot?
-    <section
-      id="contact-form"
-      className=""
-    >
+    <section id="contact-form" className="">
       <p className="text-center text-2xl">
         Want to Sign up for service?
         <br />
@@ -97,6 +94,7 @@ export default function ContactForm() {
         onSubmit={handleSubmit}
         action=""
         className="m-8 flex flex-col items-center justify-center gap-6 text-left text-xl children:flex children:w-3/4 children:flex-col children:gap-2"
+        netlify
       >
         <div className="">
           <label htmlFor="name">Full Name: </label>
@@ -123,10 +121,7 @@ export default function ContactForm() {
           />
         </div>
         <div className="">
-          <label
-            className="underline"
-            htmlFor="email"
-          >
+          <label className="underline" htmlFor="email">
             E-Mail:{" "}
           </label>
           <input
@@ -140,10 +135,7 @@ export default function ContactForm() {
           />
         </div>
         <div className="">
-          <label
-            className="underline"
-            htmlFor="subject"
-          >
+          <label className="underline" htmlFor="subject">
             Subject:{" "}
           </label>
           <input
