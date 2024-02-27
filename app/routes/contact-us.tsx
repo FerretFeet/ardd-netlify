@@ -1,4 +1,7 @@
-import ContactForm from "../components/ContactForm";
+import ContactForm, { formAction } from "../components/ContactForm";
+
+export const action = formAction;
+
 export default function ContactUs() {
   return (
     <section className="">

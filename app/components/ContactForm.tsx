@@ -1,4 +1,5 @@
 import { ChangeEvent, useState } from "react";
+import type { ActionFunctionArgs } from "@remix-run/node";
 // import React;
 
 interface FormState {
@@ -7,6 +8,29 @@ interface FormState {
   email: string;
   subject: string;
   message: string;
+}
+
+// export async function loader() {
+
+// }
+
+export async function formAction({ request }: ActionFunctionArgs) {
+  const formData = await request.formData();
+  const baseUrl = request.url;
+  console.log(baseUrl);
+  const response = await fetch(`${baseUrl}/contactForm`, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/x-www-form-urlencoded",
+    },
+    body: `{
+      name=${formData.get("name")},
+      phone=${formData.get("phone")},
+      email=${formData.get("email")}
+    `,
+  });
+  console.log(response);
+  return null;
 }
 
 export default function ContactForm() {
@@ -79,7 +103,10 @@ export default function ContactForm() {
     // NODEMAILER TO SEND EMAIL
     // HOW TO INTEGRATE FRONT AND BACKEND
     //Honeypot?
-    <section id="contact-form" className="">
+    <section
+      id="contact-form"
+      className=""
+    >
       <p className="text-center text-2xl">
         Want to Sign up for service?
         <br />
@@ -95,10 +122,15 @@ export default function ContactForm() {
         // onSubmit={handleSubmit}
         name="contactForm v1"
         method="POST"
+        action="/contact-us"
         className="m-8 flex flex-col items-center justify-center gap-6 text-left text-xl children:flex children:w-3/4 children:flex-col children:gap-2"
         // data-netlify="true"
       >
-        <input type="hidden" name="form-name" value="contactForm v1" />
+        <input
+          type="hidden"
+          name="form-name"
+          value="contactForm v1"
+        />
         <div className="">
           <label htmlFor="name">Full Name: </label>
           <input
@@ -126,7 +158,10 @@ export default function ContactForm() {
           />
         </div>
         <div className="">
-          <label className="underline" htmlFor="email">
+          <label
+            className="underline"
+            htmlFor="email"
+          >
             E-Mail:{" "}
           </label>
           <input
@@ -141,7 +176,10 @@ export default function ContactForm() {
           />
         </div>
         <div className="">
-          <label className="underline" htmlFor="subject">
+          <label
+            className="underline"
+            htmlFor="subject"
+          >
             Subject:{" "}
           </label>
           <input
