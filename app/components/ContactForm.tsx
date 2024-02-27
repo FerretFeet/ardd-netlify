@@ -15,7 +15,7 @@ interface FormState {
 // }
 
 // const baseUrl = process.env.NETLIFY_SITE_URL || "https://localhost:3000";
-const baseUrl = "https://ardoodyduty.netlify.app";
+const baseUrl = "https://ardoodyduty.com";
 
 export async function formAction({ request }: ActionFunctionArgs) {
   const formData = await request.formData();
