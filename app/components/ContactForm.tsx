@@ -30,6 +30,8 @@ export async function formAction({ request }: ActionFunctionArgs) {
       name: String(formData.get("name")),
       phone: String(formData.get("phone")),
       email: String(formData.get("email")),
+      subject: String(formData.get("subject")),
+      message: String(formData.get("message")),
     }).toString(),
   });
   console.log(response);
