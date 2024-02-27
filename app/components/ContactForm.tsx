@@ -14,9 +14,10 @@ interface FormState {
 
 // }
 
+const baseUrl = process.env.NETLIFY_SITE_URL || "https://localhost:3000";
+
 export async function formAction({ request }: ActionFunctionArgs) {
   const formData = await request.formData();
-  const baseUrl = request.url;
   console.log(baseUrl);
   const response = await fetch(`${baseUrl}/contactForm`, {
     method: "POST",
@@ -32,8 +33,6 @@ export async function formAction({ request }: ActionFunctionArgs) {
     `,
   });
   console.log(response);
-  //return redirect(route) ?
-  //dont return response bc it is fetched
   return redirect("/contact-us");
 }
 
@@ -128,13 +127,7 @@ export default function ContactForm() {
         method="POST"
         action="/contact-us"
         className="m-8 flex flex-col items-center justify-center gap-6 text-left text-xl children:flex children:w-3/4 children:flex-col children:gap-2"
-        data-netlify="true"
       >
-        <input
-          type="hidden"
-          name="form-name"
-          value="contactForm v1"
-        />
         <div className="">
           <label htmlFor="name">Full Name: </label>
           <input

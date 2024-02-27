@@ -4,6 +4,7 @@ node_modules
 /public/build
 /build
 .env
+.env.d.ts
 
 # Local Netlify folder
 .netlify
