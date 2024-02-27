@@ -1,5 +1,5 @@
 import { ChangeEvent, useState } from "react";
-import type { ActionFunctionArgs } from "@remix-run/node";
+import { redirect, type ActionFunctionArgs } from "@remix-run/node";
 // import React;
 
 interface FormState {
@@ -32,7 +32,9 @@ export async function formAction({ request }: ActionFunctionArgs) {
     `,
   });
   console.log(response);
-  return null;
+  //return redirect(route) ?
+  //dont return response bc it is fetched
+  return redirect("/contact-us");
 }
 
 export default function ContactForm() {
@@ -126,7 +128,7 @@ export default function ContactForm() {
         method="POST"
         action="/contact-us"
         className="m-8 flex flex-col items-center justify-center gap-6 text-left text-xl children:flex children:w-3/4 children:flex-col children:gap-2"
-        // data-netlify="true"
+        data-netlify="true"
       >
         <input
           type="hidden"
