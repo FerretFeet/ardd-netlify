@@ -14,7 +14,8 @@ interface FormState {
 
 // }
 
-const baseUrl = process.env.NETLIFY_SITE_URL || "https://localhost:3000";
+// const baseUrl = process.env.NETLIFY_SITE_URL || "https://localhost:3000";
+const baseUrl = "https://ardoodyduty.netlify.app";
 
 export async function formAction({ request }: ActionFunctionArgs) {
   const formData = await request.formData();
@@ -24,13 +25,12 @@ export async function formAction({ request }: ActionFunctionArgs) {
     headers: {
       "Content-Type": "application/x-www-form-urlencoded",
     },
-    body: `
-      form-name="contactForm v1"&
-      name=${formData.get("name")}&
-      phone=${formData.get("phone")}&
-      email=${formData.get("email")}&
-      
-    `,
+    body: new URLSearchParams({
+      "form-name": "contactForm v1",
+      name: String(formData.get("name")),
+      phone: String(formData.get("phone")),
+      email: String(formData.get("email")),
+    }).toString(),
   });
   console.log(response);
   return redirect("/contact-us");
