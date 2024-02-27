@@ -23,10 +23,12 @@ export async function formAction({ request }: ActionFunctionArgs) {
     headers: {
       "Content-Type": "application/x-www-form-urlencoded",
     },
-    body: `{
-      name=${formData.get("name")},
-      phone=${formData.get("phone")},
-      email=${formData.get("email")}
+    body: `
+      form-name="contactForm v1"&
+      name=${formData.get("name")}&
+      phone=${formData.get("phone")}&
+      email=${formData.get("email")}&
+      
     `,
   });
   console.log(response);

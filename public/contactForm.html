@@ -1,4 +1,10 @@
-<form name="contactForm v1" netlify netlify-honeypot="bot-field" hidden>
+<form name="contactForm v1" method="POST"
+  netlify netlify-honeypot="bot-field">
+  <input
+  type="hidden"
+  name="form-name"
+  value="contactForm v1"
+/>
   <input type="text"  name="name">
   <input type="text" name="phone">
   <input type="email" name="email">
