@@ -1,3 +1,26 @@
+import { MetaFunction } from "@remix-run/node";
+
+export const meta: MetaFunction = () => {
+  return [
+    { title: "Home | AR Doody Duty" },
+    {
+      property: "og:title",
+      content:
+        "AR Doody Duty: Your Trusted Pet Waste Removal in North-Central Arkansas",
+    },
+    {
+      property: "og:description",
+      content:
+        "Live worry-free with a clean yard! Our reliable pet waste removal services keep your lawn sanitary and safe for you and your furry friends. Serving Beebe, Ward, Cabot, and Searcy in North-Central Arkansas. Schedule your weekly service today!",
+    },
+    {
+      name: "description",
+      content:
+        "Discover reliable and friendly pet waste removal with AR Doody Duty. Serving Beebe, Ward, Cabot, and Searcy, we pride ourselves on impeccable yards and exceptional customer service. Enjoy a clean space for you and your pets with our weekly service plans",
+    },
+  ];
+};
+
 function Index() {
   /*###########################
   SPOT TO WRITE ACCEPTED PAYMENTS
@@ -43,9 +66,15 @@ function Index() {
       </section>
 
       {/* ######### NEXT SECTION ################ */}
-      <section id="intro" className="pb-6 text-center text-xl">
+      <section
+        id="intro"
+        className="pb-6 text-center text-xl"
+      >
         <h2 className="m-8 font-bold ">Don&apos;t Let Things Pile Up</h2>
-        <div className="flex flex-col lg:flex-row" id="intro-container">
+        <div
+          className="flex flex-col lg:flex-row"
+          id="intro-container"
+        >
           <div className="flex flex-col space-y-4 p-4 text-center text-lg">
             <img
               className="max-w-32 self-center"
@@ -65,7 +94,10 @@ function Index() {
               src="/assets/dogwpoop.png"
               alt="A dog with poop."
             />
-            <a className="text-xs" href="http://www.freepik.com">
+            <a
+              className="text-xs"
+              href="http://www.freepik.com"
+            >
               Designed by studiogstock / Freepik
             </a>
 
@@ -93,7 +125,10 @@ function Index() {
           </div>
         </div>
       </section>
-      <section id="whyUs" className="p-6">
+      <section
+        id="whyUs"
+        className="p-6"
+      >
         <h2 className="m-6 text-center text-2xl font-bold">Why Choose Us?</h2>
 
         {/* IMAGES BETWEEN AT MD:

@@ -1,6 +1,29 @@
 import { Disclosure, Transition } from "@headlessui/react";
 import { ChevronRightIcon } from "@heroicons/react/20/solid";
 
+import { MetaFunction } from "@remix-run/node";
+
+export const meta: MetaFunction = () => {
+  return [
+    { title: "Services | AR Doody Duty" },
+    {
+      property: "og:title",
+      content:
+        "Our Services - Your Trusted Pet Waste Removal Service in North-Central Arkansas",
+    },
+    {
+      property: "og:description",
+      content:
+        "Explore our weekly packages for pet waste removal services. We operate in Beebe, Ward, Cabot, and Searcy, ensuring a clean yard for you and your pets. Check out our services now",
+    },
+    {
+      name: "description",
+      content:
+        "Discover the ease of pet waste removal! We offer convenient weekly packages to keep your yard clean and odor-free. Serving Beebe, Ward, Cabot, and Searcy in North-Central Arkansas. Learn more about our services!",
+    },
+  ];
+};
+
 export default function Services() {
   return (
     <div className="">
@@ -59,7 +82,10 @@ export default function Services() {
                 Starting at $60, and including 5.0 gallons of waste removal, if
                 more is required, we charged $40 for each additional 5.0 gallon
                 bucket used.{" "}
-                <a className="underline hover:italic" href="/contact-us">
+                <a
+                  className="underline hover:italic"
+                  href="/contact-us"
+                >
                   Contact us for more information
                 </a>
               </p>
@@ -118,7 +144,10 @@ export default function Services() {
               with trash or poop? Have larger animals and tired of the manure
               everywhere? Contact Us and we&apos;ll see what we can do!
             </p>
-            <a href="/contact-us" className="lg:hidden">
+            <a
+              href="/contact-us"
+              className="lg:hidden"
+            >
               <button
                 type="button"
                 className="mx-auto mb-6 mt-4 flex content-center justify-center rounded-md bg-prim-1 p-2 text-xl font-semibold text-off-white hover:underline hover:opacity-90 lg:hidden"
@@ -144,7 +173,10 @@ export default function Services() {
               further, starting from $50 for smaller jobs. Contact Us and
               we&apos;ll see what we can do!
             </p>
-            <a href="/contact-us" className="lg:hidden">
+            <a
+              href="/contact-us"
+              className="lg:hidden"
+            >
               <button
                 type="button"
                 className="mx-auto mb-6 mt-4 flex content-center justify-center rounded-md bg-prim-1 p-2 text-xl font-semibold text-off-white hover:underline hover:opacity-90 lg:hidden"
@@ -185,7 +217,10 @@ export default function Services() {
         </a>
       </section>
 
-      <section id="faq" className="m-10">
+      <section
+        id="faq"
+        className="m-10"
+      >
         <h4 className="p-4 text-center text-3xl font-bold">
           Frequently Asked Questions
         </h4>
