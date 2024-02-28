@@ -34,7 +34,7 @@ export function Footer() {
               </button>
             </a>
             <p className="text-center text-xl font-semibold lg:text-3xl">
-              Or Call #{import.meta.env.CONTACT_PHONE}
+              Or Call 501-237-1638
             </p>
           </div>
         </div>
