@@ -14,7 +14,7 @@ export const meta: MetaFunction = () => {
     {
       property: "og:description",
       content:
-        "Explore our weekly packages for pet waste removal services. We operate in Beebe, Ward, Cabot, and Searcy, ensuring a clean yard for you and your pets. Check out our services now",
+        "Explore our weekly packages for pet waste removal services. We operate in Beebe, Ward, Cabot, and Searcy, Jacksonville and Sherwood to ensure a clean yard for you and your pets. Check out our services now",
     },
     {
       name: "description",
@@ -91,19 +91,21 @@ export default function Services() {
               </p>
             </div>
             <div className="lg:px-8">
-              <h5 className="mt-10 text-xl font-semibold">&ensp;Weekly</h5>
+              <h5 className="mt-10 text-xl font-semibold">&ensp;Weekly, BiWeekly, Monthly</h5>
               <p className="mt-5 text-left font-sans text-lg">
-                Starting at $18/visit for one dog. +5/dog. additional charges
-                apply for large yard areas greater than .25 acres.
+                Starting at $22.5/visit for less than 2.5 G of waste. $30 for 3.5 G.  
+                $40 for  
               </p>
             </div>
+            {/*
+            #####INCLUDED IN ABOVE LINE
             <div className="lg:px-8">
               <h5 className="mt-10 text-xl font-semibold">&ensp;Bi-Weekly</h5>
               <p className="mt-5 text-left font-sans text-lg">
-                Starting at $27/visit for one dog. +5/dog. additional charges
+                Starting at $30/visit for one dog. +5/dog. additional charges
                 apply for large yard areas greater than .25 acres.
               </p>
-            </div>
+            </div> */}
 
             <div className="lg:px-8">
               <h5 className="mt-10 text-xl font-semibold">
@@ -116,7 +118,7 @@ export default function Services() {
                   Available for all services.
                   <br />
                 </span>
-                For $7 I&apos;ll take your pet&apos;s waste away with me.
+                For $4/5G I&apos;ll take your pet&apos;s waste away with me.
                 Otherwise I&apos;ll leave it in your outside trash can.
               </p>
             </div>
